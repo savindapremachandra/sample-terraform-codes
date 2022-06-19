@@ -110,7 +110,7 @@ resource "aws_lb_target_group_attachment" "instance_2" {
 }
 
 resource "aws_lb_listener_rule" "instances" {
-  listener_arn = aws_lb_listener.http.arnstner
+  listener_arn = aws_lb_listener.http.arn
   priority     = 50
 
   action {
