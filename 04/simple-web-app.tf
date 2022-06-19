@@ -149,7 +149,7 @@ resource "aws_security_group_rule" "allow_alb_all_outbound" {
   cidr_blocks = ["0.0.0.0/0"]
 }
 
-resource "aws_db_instance" "default" {
+resource "aws_db_instance" "db_instance" {
   allocated_storage    = 10
   engine               = "mysql"
   engine_version       = "5.7"
